@@ -1,7 +1,7 @@
 language: python
-     python:
-       - "3.6"
-     install:
-       - make deps
-     script:
-- make test
+
+install:
+  - make deps
+
+script:
+  - make test
