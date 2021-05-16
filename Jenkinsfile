@@ -9,18 +9,12 @@ pipeline {
       stage('Linter') {
         steps {
                           sh 'make deps'
-                      }
+              }
         }
       stage('Test') {
         steps {
                   sh 'make test'
-                }
-            }
-        }
-}
-	            sh 'make deps'
-	            sh 'make test'
-        	}
+              }
         }
     }
 }
