@@ -86,4 +86,9 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
   ```
 ## statuscake
  monitoring co 15 minut
- 
+
+## dodanie TravisCI
+[![Build Status](https://travis-ci.com/iurisk/se_hello_printer_app.svg?branch=master)](https://travis-ci.com/iurisk/se_hello_printer_app)
+
+## dodanie statuscake
+https://app.statuscake.com/button/index.php?Track=70621&Days=1&Design=1
