@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Deps') {
             steps {
-                sh 'make deps'
+	            sh 'make deps'
             }
         }
         stage('Test') {
@@ -18,13 +18,13 @@ pipeline {
                             pattern: 'test_results.xml',
                             skipNoTestFiles: false,
                             stopProcessingIfError: true)
-                  ]
-        }
-        }
-        stage('Lint') {
-            steps {
-              sh 'make lint'
+                            ]
             }
+        }
+        stage('Linter') {
+          steps {
+              sh 'make lint'
+          }
         }
     }
     post{
